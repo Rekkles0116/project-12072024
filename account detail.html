@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="post discussion.css">
+  <title>About </title>
+</head>
+
+<body>
+
+  <div class="vertical-menu">
+    <div class="menu-header">
+      <a href="home.html">
+        <img src="image/project logo.png" alt="Logo" class="logo">
+      </a>
+    </div>
+    <a href="home.html" ><i class="fas fa-home"></i> Home</a>
+    <a href="trending.html"><i class="fas fa-chart-line"></i> Trending</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+  </div>
+
+  <div class="top-bar">
+    <div class="user-info">
+      <img id="profilePic" src="Photo/j.jpg" class="rounded-circle" width="150" alt="Profile Picture">
+      <span class="details">Cheng Lee</span>
+      <pre>
+        <span class="details">                    Course           :</span>
+
+        <span class="details">                    User Type        :</span>
+
+        <span class="details">                    Date of Birthday :</span>
+      </pre>
+    </div>
+
+    <label class="custom-file-upload">
+      <input type="file" name="fileupload" accept="image/*" onchange="previewFile(this)">
+      Change Profile Picture
+    </label>
+
+  </div>
+
+  <div class="big">
+    <div class="menu">
+        <a href="post discussion.html">Post Discussion</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="history.html">History</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="account detail.html">Account Details</a>
+    </div>
+
+  
+    <div class="account">
+        <div class="details-container">
+            <span class="details">Full Name:</span>
+            <span class="details">Nickname:</span>
+            <span class="details">Country:</span>
+            <span class="details">Gender:</span>
+            <span class="details">Age:</span>
+            <span class="details">ID:</span>
+            <span class="details">Department:</span>
+            <span class="details">Email Address:</span>
+            <span class="details">Phone Number:</span>
+            <span class="details">Address:</span>
+            <span class="details">Password:</span>
+            <span class="details">Change Password:</span>
+            <span class="details">Notification:</span>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to track clicks on links
+    document.addEventListener('DOMContentLoaded', function() {
+      var links = document.querySelectorAll('.vertical-menu a');
+      links.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          var linkText = event.target.textContent.trim();
+          var username = document.querySelector('.username').textContent.trim();
+          var timestamp = new Date().toISOString();
+
+          // Example: send this information to a server-side script for logging
+          // Replace this with actual server-side code to handle logging to a database
+          console.log(`User '${username}' clicked on '${linkText}' at '${timestamp}'`);
+
+        });
+      });
+    });
+
+    function previewFile(input) {
+      var file = input.files[0];
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        document.getElementById('profilePic').src = e.target.result;
+      };
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+    
+</body>
+
+</html>

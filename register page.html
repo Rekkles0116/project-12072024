@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER PAGE</title>
+    <link rel="stylesheet" href="register page.css">
+</head>
+
+<body>
+    <div class="container">
+        <center>
+        <div class="title">REGISTER</div>
+        </center>
+        <form action="register.php" method="POST">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">FULL NAME</span>
+                    <input type="text" name="full_name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">NICKNAME</span>
+                    <input type="text" name="nickname" placeholder="Enter your nickname" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">ID</span>
+                    <input type="text" name="user_id" placeholder="Enter your ID" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">GENDER</span>
+                    <select name="gender">
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="MALE">MALE</option>
+                        <option value="FEMALE">FEMALE</option>
+                    </select>
+                    
+                </div>
+
+                <div class="input-box">
+                    <span class="details">AGE</span>
+                    <input type="text" name="age" placeholder="Enter your age" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">ADDRESS</span>
+                    <input type="text" name="address" placeholder="Enter your address" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">EMAIL ADDRESS</span>
+                    <input type="text" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">PHONE NUMBER</span>
+                    <input type="text" name="phone_number" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">COUNTRY</span>
+                    <select name="country">
+                        <option value="" disabled selected>Select your country</option>
+
+                        <optgroup label="ASIAN">
+                            <option value="MY">MALAYSIA</option>
+                            <option value="SG">SINGAPORE</option>
+                            <option value="SOUTH KOREA">SOUTH KOREA</option>
+                            <option value="JP">JAPAN</option>
+                        </optgroup>
+
+                        <optgroup label="WESTERN">
+                            <option value="USA">AMERICA</option>
+                            <option value="UK">UNITED KINGDOM</option>
+                            <option value="FRANCE">FRANCE</option>
+                            <option value="GERMANY">GERMANY</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">USER TYPE</span>
+                    <select name="user_type">
+                        <option value="" disabled selected>Select your user type</option>
+
+                        <optgroup label="STUDENT">
+                            <option value="STUDENT">STUDENT</option>
+                        </optgroup>
+
+                        <optgroup label="STAFF">
+                            <option value="SALES">SALES</option>
+                            <option value="MARKETING">MARKETING</option>
+                            <option value="PROPERTY MANAGEMENT">PROPERTY MANAGEMENT</option>
+                            <option value="HOSTEL MANAGEMENT">HOSTEL MANAGEMENT</option>
+                            <option value="QUALITY MANAGEMENT">QUALITY MANAGEMENT</option>
+                            <option value="FINANCE">FINANCE</option>
+                            <option value="OFFICE OF THE REGISTER">OFFICE OF THE REGISTER</option>
+                            <option value="ACADEMIC AFFAIRS">ACADEMIC AFFAIRS</option>
+                            <option value="HR">HUMAN RESOURCES</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">PROGRAM</span>
+                    <select name="program">
+                        <option value="" disabled selected>Select your program</option>
+
+                        <optgroup label="CERTIFICATE">
+                            <option value="CERTIFICATE IN BUSINESS MANAGEMENT">CERTIFICATE IN BUSINESS MANAGEMENT</option>
+                            <option value="CERTIFICATE IN ENGLISH LANGUAGE">CERTIFICATE IN ENGLISH LANGUAGE</option>
+                        </optgroup>
+
+                        <optgroup label="FOUNDATION">
+                            <option value="FOUNDATION IN BUSINESS">FOUNDATION IN BUSINESS</option>
+                        </optgroup>
+
+                        <optgroup label="DIPLOMA">
+                            <option value="DBM">DIPLOMA IN BUSINESS MANAGEMENT</option>
+                            <option value="DIF">DIPLOMA IN FINANCE</option>
+                            <option value="DIA">DIPLOMA IN ACCOUNTING</option>
+                            <option value="DIB">DIPLOMA IN INTERNATIONAL BUSINESS</option>
+                            <option value="DMK">DIPLOMA IN MARKETING</option>
+                            <option value="DMC">DIPLOMA IN MASS COMMUNICATION</option>
+                            <option value="DTM">DIPLOMA IN TOURISM MANAGEMENT</option>
+                            <option value="DIPLOMA IN HOTEL MANAGEMENT">DIPLOMA IN HOTEL MANAGEMENT</option>
+                            <option value="DIT">DIPLOMA IN INFORMATION TECHNOLOGY</option>
+                            <option value="DITDM">DIPLOMA IN INFORMATION TECHNOLOGY (DIGITAL MEDIA)</option>
+                        </optgroup>
+
+                        <optgroup label="DEGREE">
+                            <option value="BBM">BACHELOR OF SCIENCE (HONOURS) IN BUSINESS MANAGEMENT</option>
+                            <option value="BMKT">BACHELOR OF SCIENCE (HONOURS) IN MARKETING</option>
+                            <option value="BAF">BACHELOR OF SCIENCE (HONOURS) IN ACCOUNTING AND FINANCE</option>
+                            <option value="BBF">BACHELOR OF SCIENCE (HONOURS) IN BANKING AND FINANCE</option>
+                            <option value="BMCC">BACHELOR OF ARTS (HONOURS) MEDIA, CULTURE AND COMMUNICATION</option>
+                            <option value="BITHM">BACHELOR OF SCIENCE (HONOURS) IN INTERNATIONAL TOURISM AND HOSPITALITY MANAGEMENT</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">DEPARTMENT (STAFF)</span>
+                    <select name="department">
+                        <option value="" disabled selected>Select your department</option>
+
+                        <option value="FT">FULL TIME</option>
+                        <option value="PT">PART TIME</option>
+                        <option value="TECHNICIAN">TECHNICIAN</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">PASSWORD</span>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">CONFIRM PASSWORD</span>
+                    <input type="password" name="" placeholder="Confirm your password" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">AVATAR</span>
+                    <input type="file" name="avatar_url" accept="image/*" onchange="previewFile(this)">
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">DEFAULT</span>
+                    <select class="profile-picture" onchange='getPicture(this)'>
+                        <option value="https://picsum.photos/50/50">DEFAULT 1</option>
+                        <option value="https://picsum.photos/50/50">DEFAULT 2</option>
+                        <option value="https://picsum.photos/50/50">DEFAULT 3</option>
+                        <option value="https://picsum.photos/50/50">DEFAULT 4</option>
+                        <option value="https://picsum.photos/50/50">DEFAULT 5</option>
+                        <option value="https://picsum.photos/50/50">DEFAULT 6</option>
+                        <option value="https://picsum.photos/50/50">DEFAULT 7</option>
+                        <option value="https://picsum.photos/50/50">DEFAULT 8</option>
+                    </select>
+                    
+                    <img class='profile-image' src='#'>
+                    
+                    <script>
+                        const profilePicture = document.querySelector('.profile-image');
+                    
+                        function getPicture(picture) {
+                            var url = picture.value;
+                            profilePicture.src = url;
+                            
+                        }
+                    
+                        function previewFile(input) {
+                            const file = input.files[0];
+                            const reader = new FileReader();
+                    
+                            reader.onloadend = function() {
+                                profilePicture.src = reader.result;
+                            };
+                    
+                            if (file) {
+                                reader.readAsDataURL(file);
+                            } else {
+                                profilePicture.src = "#";
+                            }
+                        }
+                    </script>
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="button">
+                <a href="login page.html"><input type="submit" value="Register"></a> 
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

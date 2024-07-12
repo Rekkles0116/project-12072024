@@ -1,0 +1,212 @@
+/* Common styles for both home and trending pages */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif; /* Standardize font family */
+  font-size: 16px; /* Standardize base font size */
+  display: flex;
+}
+
+.vertical-menu {
+  width: 240px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.vertical-menu .menu-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.vertical-menu .logo {
+  max-width: 200px;
+  margin-bottom: 0;
+}
+
+.vertical-menu a {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.vertical-menu a i {
+  margin-right: 12px;
+}
+
+.vertical-menu a:hover {
+  background-color: #f6f6f6;
+}
+
+.vertical-menu a.active {
+  background-color: #0079d3;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f6f6f6;
+  width: 100%; /* Adjusted to full width */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  background-image: url(image/search.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%; /* Adjusted to full width */
+  max-width: 600px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Rounded corners */
+  font-family: 'Roboto', Arial, sans-serif; /* Ensure consistent font family */
+  font-size: 16px; /* Adjust font size */
+}
+
+.profile-icon {
+  font-size: 20px; /* Adjusted font size */
+  margin-right: 25px;
+  padding: 8px; /* Padding inside the border */
+  display: inline-block; /* Ensures it behaves as a block element */
+  text-decoration: none; /* Removes default underline */
+  color: #333; /* Text color */
+}
+
+.create-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin-right: 16px; /* Adjusted margin */
+}
+
+.create {
+  width: 24px; /* Adjusted icon size */
+  height: 24px; /* Adjusted icon size */
+  margin-right: 8px;
+}
+
+.content {
+  margin-left: 240px;
+  margin-top: 100px;
+  padding: 16px;
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.forum-discussion {
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Truncate text */
+  white-space: nowrap; /* Prevent wrapping */
+  max-width: 1190px;
+  max-height: 240px;
+  margin-top: 2%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.subforum-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.subforum-date {
+  color: #888;
+  font-size: 12px;
+}
+
+.description h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.subforum-description p {
+  margin: 10px 0;
+}
+
+.subforum-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.gold,
+.silver,
+.bronze {
+  float:right;
+  width: 70px;
+}
+
+.forum-discussion-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.forum-discussion {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.forum-discussion-link:hover .forum-discussion {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Active/focus effect */
+.forum-discussion-link:focus .forum-discussion,
+.forum-discussion-link:active .forum-discussion {
+  background-color: #f1f1f1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Additional effects */
+.forum-discussion-link .forum-discussion {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.forum-discussion .subforum-avatar i {
+  margin-right: 10px;
+}
+
+.forum-discussion h1 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.forum-discussion p,
+.forum-discussion ul {
+  margin: 10px 0;
+}
+
+.forum-discussion ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
